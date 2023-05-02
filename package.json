@@ -1,19 +1,19 @@
 {
-  "name": "typescript-template",
+  "name": "tradao-project",
   "version": "1.0.5",
   "description": "A complete Node.js project template using TypeScript and following general best practices.",
   "keywords": [
     "typescript",
-    "template"
+    "tradao"
   ],
   "author": {
-    "name": "Chris Wells",
-    "url": "https://chriswells.io"
+    "name": "Tradao",
+    "url": "https://www.tradao.xyz"
   },
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chriswells0/node-typescript-template.git"
+    "url": "https://github.com/tradao-xyz/node-typescript-template.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,8 @@
     "prepare": "npm run build",
     "test": "mocha",
     "upgrade": "npx npm-check -u",
-    "version": "npm run build && npm run changelog:update"
+    "version": "npm run build && npm run changelog:update",
+    "start": "npm run build && node ./dist/index.js"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",
